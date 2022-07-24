@@ -13,7 +13,7 @@ function q1(p1, p2, p3, p4) {
 }
 
 // 計算 1 + 2 + ... + n = ﹖
-function q2(n){
+function q2(n) {
     let total = 0;
 
     // ...
@@ -21,50 +21,50 @@ function q2(n){
 }
 
 // 以迴圈顯示所有大小寫的英文字母。
-function q3(){
-    let upperCases = []
-    let lowerCases = []
+function q3() {
+    let upperCases = [];
+    let lowerCases = [];
 
     // ...
     return {
         upperCases: upperCases,
-        lowerCases: lowerCases
-    }
+        lowerCases: lowerCases,
+    };
 }
 
 // 印出由 1 到 n (n >= 1) 中，所有能被 13 所整除的整數。
-function q4(){
-    let result = []
+function q4() {
+    let result = [];
 
     // ...
-    return result
+    return result;
 }
 
 // 列出九九乘法表
-function q5(){
+function q5() {
     // only need console
 }
 
 // 將輸入字串之英文字母大小寫互換。
-function q6(inputString){
-    let convert = ''
+function q6(inputString) {
+    let convert = "";
 
     // ...
-    return convert
+    return convert;
 }
 
 // 字串反轉。如：輸入 abcdef，則輸出 fedcba。
-function q7(inputString){
-    let reverse = ''
+function q7(inputString) {
+    let reverse = "";
 
     // ...
-    return reverse
+    return reverse;
 }
 
 // 計算輸入英文文字檔案中，各「英文字母」出現的次數。(區分大小寫)
-function q8(inputString){
-    let result = {}
+function q8(inputString) {
+    let result = {};
 
     // ...
-    return result
+    return result;
 }
