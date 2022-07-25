@@ -24,6 +24,42 @@ function whileLoop() {
 
 // whileLoop();
 
+// break, continue, return
+
+function breakSample() {
+    for (let i = 1; i < 10; i++) {
+        if (i % 2 === 0) {
+            console.log(i)
+            break;  // 跳出迴圈外
+        }
+    }
+    // break ...
+}
+
+function continueSample() {
+    for (let i = 1; i < 10; i++) {
+        if (i === 5) {
+            continue;  // 跳過以下的部份
+        }
+        console.log(i)
+    }
+}
+
+continueSample()
+
+function returnSample() {
+    for (let i = 1; i < 10; i++) {
+        if (i % 2 === 0) {
+            console.log(i)
+            return;  // 跳出函數外
+        }
+    }
+}
+// return
+
+// let results = breakSample()
+
+
 // 判斷式
 // if,  else
 
@@ -83,4 +119,4 @@ function returnNumber(param) {
 
 // 使用
 let result = returnNumber(11);
-console.log(result);
+// console.log(result);

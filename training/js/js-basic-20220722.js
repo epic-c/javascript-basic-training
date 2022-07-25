@@ -45,7 +45,13 @@ var thisIsNumber = 10; // 數字，可做運算
 var thisIsString = "字串"; // 字串
 var thisIsBoolean = true; // 布林，只有 true 和 false
 
-var thisIsArray = [1, 2, 3, 4]; // 陣列
+var thisIsArray = [ // 陣列
+    [1,2,3],
+    [4,5,6]
+]
+
+thisIsArray[0][1]
+
 var thisIsObject = {
     // 物件
     number: 10,
