@@ -48,6 +48,8 @@ array.forEach((e,i) => {
 
 // array.filter
 
+// array.sort
+
 // string.toUpperCase
 
 let thisIsString = "lower-case";
