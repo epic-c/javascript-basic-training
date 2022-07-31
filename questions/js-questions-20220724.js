@@ -58,7 +58,7 @@ function q3() {
 }
 
 // 印出由 1 到 n (n >= 1) 中，所有能被 13 所整除的整數。
-function q4() {
+function q4(n) {
     let result = [];
 
     // ...

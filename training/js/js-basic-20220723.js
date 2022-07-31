@@ -1,6 +1,6 @@
-// # 迴圈
+// TODO 迴圈
 
-// for
+// TODO for
 function forLoop() {
     let array = [9, 8, 7, 6, 5];
     for (let i = 0; i < array.length; i++) {
@@ -10,7 +10,7 @@ function forLoop() {
 
 // forLoop();
 
-// while
+// TODO while
 function whileLoop() {
     let i = 1;
     while (i < 0) {
@@ -24,13 +24,13 @@ function whileLoop() {
 
 // whileLoop();
 
-// break, continue, return
+// TODO break, continue, return
 
 function breakSample() {
     for (let i = 1; i < 10; i++) {
         if (i % 2 === 0) {
-            console.log(i)
-            break;  // 跳出迴圈外
+            console.log(i);
+            break; // 跳出迴圈外
         }
     }
     // break ...
@@ -39,19 +39,19 @@ function breakSample() {
 function continueSample() {
     for (let i = 1; i < 10; i++) {
         if (i === 5) {
-            continue;  // 跳過以下的部份
+            continue; // 跳過以下的部份
         }
-        console.log(i)
+        console.log(i);
     }
 }
 
-continueSample()
+continueSample();
 
 function returnSample() {
     for (let i = 1; i < 10; i++) {
         if (i % 2 === 0) {
-            console.log(i)
-            return;  // 跳出函數外
+            console.log(i);
+            return; // 跳出函數外
         }
     }
 }
@@ -59,8 +59,7 @@ function returnSample() {
 
 // let results = breakSample()
 
-
-// 判斷式
+// TODO 判斷式
 // if,  else
 
 function onlyIf(param) {
@@ -105,7 +104,38 @@ function ifAndElse2(param) {
     }
 }
 
-// return 回傳
+// TODO 邏輯運算元 (great than, less than, equal, not equal, or, and, not ...)
+function logic(number) {
+    if (number > 10) {
+        console.log("number 大於 10");
+    }
+    if (number >= 10) {
+        console.log("number 大於等於 10");
+    }
+    if (number < 10) {
+        console.log("number 小於 10");
+    }
+    if (number <= 10) {
+        console.log("number 小於等於 10");
+    }
+    if (number == 10) {
+        console.log("number 等於 10");
+    }
+    if (number != 10) {
+        console.log("number 不等於 10");
+    }
+    if (number > 10 || number < 5) {
+        console.log("number 大於 10 或者 number 小於 5");
+    }
+    if (number > 10 && number < 15) {
+        console.log("number 大於 10 而且 number 小於 15");
+    }
+    if (!(number > 10)) {
+        console.log("number 不 大於 10 (number 小於等於 9)");
+    }
+}
+
+// TODO return 回傳
 // 宣告
 function returnNumber(param) {
     if (param < 10) {

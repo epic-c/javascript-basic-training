@@ -7,10 +7,27 @@
 // 極度肥胖：高於40
 
 function q1(height, weight) {
-    let result = "";
+    let BMI =weight/(height/100)/(height/100)
 
-    // ...
-    return result;
+    weight = 10
+    if(BMI<18.5){
+       return "過輕"
+    }    
+    if(BMI>18.5&&BMI<22.9){
+        return "正常"
+    }
+    if(BMI>23&&BMI<24.9){
+        return "偏胖"
+    }
+    if(BMI>25&&BMI<29.9){
+        return "肥胖"
+    }
+    if(BMI>30&&BMI<39){
+        return "重度肥胖"
+    }
+    if(BMI>40){
+        return "極度肥胖"
+    }
 }
 
 // 手機選號:根據使用者輸入的手機號來確認使用者實際支付的價格
