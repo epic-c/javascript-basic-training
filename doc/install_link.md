@@ -1,3 +1,5 @@
 + [node js install](https://nodejs.org/zh-tw/download/)
 + [git](https://git-scm.com/download/win)
 + [vscode](https://code.visualstudio.com/)
++ [高中生程式解題系統](https://zerojudge.tw/Problems?page=1&&tabid=BASIC)
++ [朔哥的程式設計之路-題庫](https://sites.google.com/site/shuogeprogram/cpp-exam)

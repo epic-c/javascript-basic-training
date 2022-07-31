@@ -54,3 +54,6 @@ array.forEach((e,i) => {
 
 let thisIsString = "lower-case";
 let thisIsString2 = thisIsString.toUpperCase();
+
+
+// Date
