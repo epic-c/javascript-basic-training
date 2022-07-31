@@ -5,12 +5,37 @@ function q1(p1, p2, p3, p4) {
     let max = 0;
     let min = 0;
 
-    // ...
+    if (p1 < p2) {
+        max = p2;
+        min = p1;
+    } else {
+        max = p1;
+        min = p2;
+    }
+    if (p3 < p4) {
+        if (max < p4) {
+            max = p4;
+        }
+        if (min > p3) {
+            min = p3;
+        }
+    } else {
+        if (max < p3) {
+            max = p3;
+        }
+        if (min > p4) {
+            min = p4;
+        }
+    }
+
     return {
         max: max,
         min: min,
     };
 }
+
+console.log(q1(33,4,5,66).max)
+
 
 // 計算 1 + 2 + ... + n = ﹖
 function q2(n) {
@@ -42,8 +67,18 @@ function q4() {
 
 // 列出九九乘法表
 function q5() {
+    for (let i = 2; i < 10; i++) {
+        q52(i);
+    }
     // only need console
 }
+function q52(i) {
+    for (let j = 1; j < 10; j++) {
+        console.log(i + "*" + j + "=" + i * j);
+    }
+}
+
+q5();
 
 // 將輸入字串之英文字母大小寫互換。
 function q6(inputString) {
