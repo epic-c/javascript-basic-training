@@ -34,6 +34,27 @@ function q1(height, weight) {
     }
     // ...
     return result;
+    let BMI =weight/(height/100)/(height/100)
+
+    weight = 10
+    if(BMI<18.5){
+       return "過輕"
+    }    
+    if(BMI>18.5&&BMI<22.9){
+        return "正常"
+    }
+    if(BMI>23&&BMI<24.9){
+        return "偏胖"
+    }
+    if(BMI>25&&BMI<29.9){
+        return "肥胖"
+    }
+    if(BMI>30&&BMI<39){
+        return "重度肥胖"
+    }
+    if(BMI>40){
+        return "極度肥胖"
+    }
 }
 
 //X<15 && X>10 且的概念

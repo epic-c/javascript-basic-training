@@ -1,6 +1,6 @@
-// # js 所有東西都是物件
+// TODO js 所有東西都是物件
 
-// # 全域 var 與區域 let
+// TODO 全域 var 與區域 let
 var a; //全域宣告
 let b; //區域宣告
 const c = 10; //常數
@@ -18,8 +18,8 @@ function varAndLet(bool) {
     console.log(x);
 }
 
-// # function
-// ## return 回傳值
+// TODO function
+// TODO return 回傳值
 function returnX() {
     return "x";
 }
@@ -27,7 +27,7 @@ var returnResult = returnX(); // 有啟動
 // var xx = returnX // 沒有啟動
 console.log(returnResult);
 
-// ## 參數
+// TODO 參數
 function add(param, param2) {
     console.log(param + " + " + param2 + " = " + (param + param2));
 }
@@ -37,7 +37,7 @@ let addResult = add(1, 2); // 參數剛好
 // let addResult = add(1, 2, 3)   // 多一個參數
 console.log(addResult);
 
-// # 基本型態
+// TODO 基本型態
 var thisIsNull = null; // 空
 var thisIsundefined = undefined; // 未定義
 
