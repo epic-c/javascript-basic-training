@@ -6,12 +6,42 @@
 // 重度肥胖：高於30
 // 極度肥胖：高於40
 
+
 function q1(height, weight) {
     let result = "";
+    let BMI =weight/(height/100)/(height/100)
+    if(BMI<18.5){
+        result="過輕"
+    }    
+//這行也可以寫成return "過輕"(以下類推) 而且也因為都return掉，就不用寫return result
+// 而且也因為return就中止，所以就也不用寫else if 
+// 參數是讓人傳值用的，所以盡量不要修改他的值；變數則是自行宣告使用
 
+    else if(BMI>18.5&&BMI<22.9){
+        result="正常"
+    }
+    else if(BMI>23&&BMI<24.9){
+        result="偏胖"
+    }
+    else if(BMI>25&&BMI<29.9){
+        result="肥胖"
+    }
+    else if(BMI>30&&BMI<39){
+        result="重度肥胖"
+    }
+    else if(BMI>40){
+        result="極度肥胖"
+    }
     // ...
     return result;
 }
+
+//X<15 && X>10 且的概念
+//X<15 || X>10 或的概念
+// X!=15 代表X不等於15
+// !X<15 代表後面指令的相反，也就是X要大於等於15
+console.log(q1(180,60))
+
 
 // 手機選號:根據使用者輸入的手機號來確認使用者實際支付的價格
 // 如果尾數為8，需支付辦卡費50元

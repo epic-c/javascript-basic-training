@@ -5,6 +5,8 @@ function q1(p1, p2, p3, p4) {
     let max = 0;
     let min = 0;
 
+// 指定max min初始值都是0，但第10行就會改變
+
     if (p1 < p2) {
         max = p2;
         min = p1;
@@ -34,6 +36,8 @@ function q1(p1, p2, p3, p4) {
     };
 }
 
+//return目的是把值把呼叫域拋回，將function的東西呼叫出去，所以如果是要計算出甚麼東西(而非單純show)，基本上就需要return(另外一但return函數就強迫中止)
+
 console.log(q1(33,4,5,66).max)
 
 
@@ -58,12 +62,22 @@ function q3() {
 }
 
 // 印出由 1 到 n (n >= 1) 中，所有能被 13 所整除的整數。
-function q4() {
+function q4(n) {
     let result = [];
+        for(let i=1;i<=n;i++ ){
+            if(i%13==0){
+                result.push(i)
+            }
+
+        }
 
     // ...
     return result;
 }
+// 這邊的RETURN代表著將跑回結果釋出的指令
+
+console.log(q4(27))
+
 
 // 列出九九乘法表
 function q5() {

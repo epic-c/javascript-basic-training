@@ -57,3 +57,5 @@ var thisIsObject = {
     number: 10,
     string: "attr",
 };
+//thisIsObject.
+// object 中都會有一個key(Number)和對應value(10)
