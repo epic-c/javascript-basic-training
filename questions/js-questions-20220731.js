@@ -17,44 +17,44 @@ function q1(height, weight) {
 // 而且也因為return就中止，所以就也不用寫else if 
 // 參數是讓人傳值用的，所以盡量不要修改他的值；變數則是自行宣告使用
 
-    else if(BMI>18.5&&BMI<22.9){
-        result="正常"
-    }
-    else if(BMI>23&&BMI<24.9){
-        result="偏胖"
-    }
-    else if(BMI>25&&BMI<29.9){
-        result="肥胖"
-    }
-    else if(BMI>30&&BMI<39){
-        result="重度肥胖"
-    }
-    else if(BMI>40){
-        result="極度肥胖"
-    }
-    // ...
-    return result;
-    let BMI =weight/(height/100)/(height/100)
+//     else if(BMI>18.5&&BMI<22.9){
+//         result="正常"
+//     }
+//     else if(BMI>23&&BMI<24.9){
+//         result="偏胖"
+//     }
+//     else if(BMI>25&&BMI<29.9){
+//         result="肥胖"
+//     }
+//     else if(BMI>30&&BMI<39){
+//         result="重度肥胖"
+//     }
+//     else if(BMI>40){
+//         result="極度肥胖"
+//     }
+//     // ...
+//     return result;
+//     let BMI =weight/(height/100)/(height/100)
 
-    weight = 10
-    if(BMI<18.5){
-       return "過輕"
-    }    
-    if(BMI>18.5&&BMI<22.9){
-        return "正常"
-    }
-    if(BMI>23&&BMI<24.9){
-        return "偏胖"
-    }
-    if(BMI>25&&BMI<29.9){
-        return "肥胖"
-    }
-    if(BMI>30&&BMI<39){
-        return "重度肥胖"
-    }
-    if(BMI>40){
-        return "極度肥胖"
-    }
+//     weight = 10
+//     if(BMI<18.5){
+//        return "過輕"
+//     }    
+//     if(BMI>18.5&&BMI<22.9){
+//         return "正常"
+//     }
+//     if(BMI>23&&BMI<24.9){
+//         return "偏胖"
+//     }
+//     if(BMI>25&&BMI<29.9){
+//         return "肥胖"
+//     }
+//     if(BMI>30&&BMI<39){
+//         return "重度肥胖"
+//     }
+//     if(BMI>40){
+//         return "極度肥胖"
+//     }
 }
 
 //X<15 && X>10 且的概念
@@ -79,19 +79,35 @@ function q2(phoneNumber) {
 // 需求:接收使用者輸入的數位,計算該數位的階乘結果
 // 已知:負數不可以有階乘,0的階乘結果是1, 5!=54321
 function q3(number) {
-    let result = 0;
+    let result = 1;
+    for(let i=1; i<=number;i++){
+
+
+    }
+    
+
+
+
 
     // ...
     return result;
 }
+
+console.log(q3(3))
+//進去看參數；出去看回傳
 
 // 100以內除了尾數為3,5,7的所有數
 function q4() {
     let result = [];
-
+    for(let i=1;i<=100;i++){
+        if(i%10!=3&&i%10!=5&&i%10!=7){
+            result.push(i);
+        }
+    }
     // ...
     return result;
 }
+console.log(q4())
 
 // 泡沫排序法
 function q5() {
