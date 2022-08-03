@@ -8,32 +8,32 @@
 
 
 function q1(height, weight) {
-    let result = "";
-    let BMI =weight/(height/100)/(height/100)
-    if(BMI<18.5){
-        result="過輕"
-    }    
-//這行也可以寫成return "過輕"(以下類推) 而且也因為都return掉，就不用寫return result
-// 而且也因為return就中止，所以就也不用寫else if 
-// 參數是讓人傳值用的，所以盡量不要修改他的值；變數則是自行宣告使用
+    // let result = "";
+    // let BMI =weight/(height/100)/(height/100)
+    // if(BMI<18.5){
+    //     result="過輕"
+    // }    
+    // //這行也可以寫成return "過輕"(以下類推) 而且也因為都return掉，就不用寫return result
+    // // 而且也因為return就中止，所以就也不用寫else if 
+    // // 參數是讓人傳值用的，所以盡量不要修改他的值；變數則是自行宣告使用
 
-    else if(BMI>18.5&&BMI<22.9){
-        result="正常"
-    }
-    else if(BMI>23&&BMI<24.9){
-        result="偏胖"
-    }
-    else if(BMI>25&&BMI<29.9){
-        result="肥胖"
-    }
-    else if(BMI>30&&BMI<39){
-        result="重度肥胖"
-    }
-    else if(BMI>40){
-        result="極度肥胖"
-    }
-    // ...
-    return result;
+    // else if(BMI>18.5&&BMI<22.9){
+    //     result="正常"
+    // }
+    // else if(BMI>23&&BMI<24.9){
+    //     result="偏胖"
+    // }
+    // else if(BMI>25&&BMI<29.9){
+    //     result="肥胖"
+    // }
+    // else if(BMI>30&&BMI<39){
+    //     result="重度肥胖"
+    // }
+    // else if(BMI>40){
+    //     result="極度肥胖"
+    // }
+    // // ...
+    // return result;
     let BMI =weight/(height/100)/(height/100)
 
     weight = 10
@@ -79,10 +79,18 @@ function q2(phoneNumber) {
 // 需求:接收使用者輸入的數位,計算該數位的階乘結果
 // 已知:負數不可以有階乘,0的階乘結果是1, 5!=54321
 function q3(number) {
-    let result = 0;
-
-    // ...
-    return result;
+    let result = 1;
+    for (let i = 2; i <= number; i++) {
+        // 1 = 1 * 2(i)
+        // 2 = 2 * 3(i)
+        // 6 = 6 * 4(i)
+        // 24 = 24 * 5(i)
+        // 120 = 120 * 6(i)
+        // ...
+        result = result * i
+    }
+    
+    return result
 }
 
 // 100以內除了尾數為3,5,7的所有數
