@@ -119,12 +119,26 @@ function q5() {
 // 西元年份除以4可整除，且除以100不可整除，為閏年。
 // 西元年份除以100可整除，且除以400不可整除，為平年
 // 西元年份除以400可整除，為閏年。
-function q6(){
-
+function q6(year){
+    if(year%400==0){
+        return "閏年"
+    }
+    if(year%100==0 && year%400!==0){
+        return "平年"
+    }
+    if(year%4==0 && year%100!==0){
+        return "閏年"
+    }
+    if(year%4!==0){
+        return "平年"
+    }
 }
+console.log(q6());
 
 // 去重
 // 輸入一個陣列，將該陣列所有相同的元素移除，確保元素不重複
-function q7(){
+function q7(array){
 
 }
+
+console.log(q7());
