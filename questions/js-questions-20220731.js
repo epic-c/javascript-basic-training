@@ -136,9 +136,20 @@ console.log(q6(1999));
 // 去重
 // 輸入一個陣列，將該陣列所有相同的元素移除，確保元素不重複
 function q7(array) {
+    let result = [];
     for (let i = 0; i < array.length; i++) {
-        console.log(array[i])
+        let Z=true
+        for (let k = i + 1; k < array.length; k++) {
+            if (array[i] == array[k]) {
+                Z=false
+                break
+            }
+        }
+        if (Z==true) {
+            result.push(array[i])
+        }  
     }
+    return result
 }
 
-console.log(q7([1,2,3]));
+console.log(q7([1, 1, 2, 3]));
