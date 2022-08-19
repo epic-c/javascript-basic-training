@@ -3,15 +3,14 @@
 // input: [1, 4]
 // output: [4, 1]
 function q1(input){
-    let A = input[0]
-    let B = input[1]
-    input[0]=B
-    input[1]=A
+    let temp = input[0]
+    input[0] = input[1]
+    input[1] = temp
 
     return input
 }
 
-console.log(q1[1,4]);
+console.log(q1([1,4]));
 
 
 // two sum
