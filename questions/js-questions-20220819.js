@@ -3,8 +3,16 @@
 // input: [1, 4]
 // output: [4, 1]
 function q1(input){
+    let A = input[0]
+    let B = input[1]
+    input[0]=B
+    input[1]=A
 
+    return input
 }
+
+console.log(q1[1,4]);
+
 
 // two sum
 // 給一個裡面元素為int的陣列，陣列中會有兩個元素加起來等於target，回傳這兩個元素的位置。
