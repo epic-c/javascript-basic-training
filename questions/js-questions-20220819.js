@@ -18,7 +18,7 @@ console.log(q1([1,4]));
 // 範例：
 // [2, 7, 11, 15], target = 9，2+7=9，因此回傳[1,2]
 function q2(array, target){
-
+array.length
 }
 
 // 所謂 Armstrong number 指的是一個 n 位數的整數，它的所有位數的 n 次方和恰好等於自己。

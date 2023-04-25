@@ -58,4 +58,4 @@ var thisIsObject = {
     string: "attr",
 };
 //thisIsObject.
-// object 中都會有一個key(Number)和對應value(10)
+// object 中都會有一個key(number)和對應value(10)
